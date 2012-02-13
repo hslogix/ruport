@@ -1018,7 +1018,7 @@ module Ruport::Data
 end
 
 
-module Ruport
+module Kernel
 
   # Shortcut interface for creating Data::Tables
   #
