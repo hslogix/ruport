@@ -571,7 +571,7 @@ module Ruport::Data
     #    table.remove_column("apple") #=> removes column named apple
     #
     def remove_column(col)
-      col = column_names[col] if col.kind_of? Fixnum
+      col = column_names[col] if col.kind_of? Numeric
       column_names.delete(col)
       each { |r| r.send(:delete,col) }
     end
